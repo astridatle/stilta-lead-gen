@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  launchd agent: run the Stilta lead drafter every Monday at 08:00 local time.
+  Install:
+    chmod +x schedule/run_weekly.sh
+    cp schedule/com.stilta.leadgen.weekly.plist ~/Library/LaunchAgents/
+    launchctl load ~/Library/LaunchAgents/com.stilta.leadgen.weekly.plist
+  Edit the absolute paths below if the repo lives elsewhere.
+-->
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.stilta.leadgen.weekly</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/Users/astridatle/stilta-lead-gen/schedule/run_weekly.sh</string>
+  </array>
+
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Weekday</key><integer>1</integer> <!-- 0=Sun, 1=Mon -->
+    <key>Hour</key><integer>8</integer>
+    <key>Minute</key><integer>0</integer>
+  </dict>
+
+  <key>StandardOutPath</key>
+  <string>/Users/astridatle/stilta-lead-gen/logs/launchd.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>/Users/astridatle/stilta-lead-gen/logs/launchd.err.log</string>
+
+  <key>RunAtLoad</key>
+  <false/>
+</dict>
+</plist>

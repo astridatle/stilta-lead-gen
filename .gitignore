@@ -1,0 +1,21 @@
+# Secrets — never commit the API token
+.env
+
+# Python
+__pycache__/
+*.pyc
+
+# Dedup state (reviewer gets a clean slate on clone)
+seen_dockets.json
+
+# State sidecars (atomic-write temp + quarantined corrupt files)
+seen_dockets.json.tmp
+*.corrupt
+
+# Verbose run logs (keep logs/last_run.json as the monitoring heartbeat)
+logs/*.log
+
+# Dry-run dev artifacts
+/leads.dryrun.jsonl
+/seen_dryrun.json
+/drafts_dryrun/

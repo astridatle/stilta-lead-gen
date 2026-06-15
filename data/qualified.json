@@ -1,0 +1,870 @@
+{
+  "fetched": 44,
+  "qualified_before_deflood": 31,
+  "qualified_count": 21,
+  "collapsed_count": 10,
+  "dropped_count": 13,
+  "drop_reasons": {
+    "operating-company defendant but no NPE / priority-venue / campaign signal": 9,
+    "individual or unverifiable defendant (no corporate indicator)": 2,
+    "no defendant parsed from caseName": 1,
+    "Schedule A / Doe mass-defendant case": 1
+  },
+  "qualified": [
+    {
+      "docket_id": 73468336,
+      "docket_number": "2:26-cv-00461",
+      "company": "Imperva, Inc.",
+      "plaintiff": "Congruent Media Resourcing LLC",
+      "event_date": "2026-06-10",
+      "court_id": "txed",
+      "court": "E.D. Tex.",
+      "judge": "James Rodney Gilstrap",
+      "cause": "35:271 Patent Infringement",
+      "case_name": "Congruent Media Resourcing LLC v. Imperva, Inc.",
+      "docket_url": "https://www.courtlistener.com/docket/73468336/congruent-media-resourcing-llc-v-imperva-inc/",
+      "signals": {
+        "defendant_tier": "large",
+        "defendant_tier_reason": "known large/established company (imperva)",
+        "npe_plaintiff": true,
+        "npe_reasons": [
+          "shell-style multi-word LLC plaintiff"
+        ],
+        "priority_venue": true,
+        "venue_label": "E.D. Tex.",
+        "repeat_filer_count": 2,
+        "judge_signal": true,
+        "priority_score": 36
+      },
+      "grounding": {
+        "patents": [
+          "9,135,418"
+        ],
+        "complaint_snippet": "COMPLAINT for Patent Infringement against Imperva, Inc. ( Filing fee $ 405 receipt number ATXEDC-11595747.), filed by Congruent Media Resourcing LLC. (Attachments: # 1 Exhibit A United States Patent No. 9,135,418, # 2 Civil Cover Sheet) (Counsel is reminded to file form required by LR CV-4(a).)(Kalberg, Steven) (Entered: 06/10/2026)"
+      }
+    },
+    {
+      "docket_id": 73472767,
+      "docket_number": "2:26-cv-00465",
+      "company": "Pepperl+Fuchs SE",
+      "plaintiff": "Ubiquitous Audio Synchronicity LLC",
+      "event_date": "2026-06-11",
+      "court_id": "txed",
+      "court": "E.D. Tex.",
+      "judge": "James Rodney Gilstrap",
+      "cause": "35:271 Patent Infringement",
+      "case_name": "Ubiquitous Audio Synchronicity LLC v. Pepperl+Fuchs SE",
+      "docket_url": "https://www.courtlistener.com/docket/73472767/ubiquitous-audio-synchronicity-llc-v-pepperlfuchs-se/",
+      "signals": {
+        "defendant_tier": "large",
+        "defendant_tier_reason": "known large/established company (pepperl+fuchs)",
+        "npe_plaintiff": true,
+        "npe_reasons": [
+          "shell-style multi-word LLC plaintiff"
+        ],
+        "priority_venue": true,
+        "venue_label": "E.D. Tex.",
+        "repeat_filer_count": 1,
+        "judge_signal": true,
+        "priority_score": 35
+      },
+      "grounding": {
+        "patents": [
+          "10,133,888"
+        ],
+        "complaint_snippet": "COMPLAINT against Pepperl+Fuchs SE ( Filing fee $ 405 receipt number ATXEDC-11597888.), filed by Ubiquitous Audio Synchronicity LLC. (Attachments: # 1 Exhibit A, # 2 Exhibit B, # 3 Civil Cover Sheet) (Counsel is reminded to file form required by LR CV-4(a).)(Najera, Nicholas) (Entered: 06/11/2026)"
+      }
+    },
+    {
+      "docket_id": 73460553,
+      "docket_number": "2:26-cv-00457",
+      "company": "Samsung Electronics Co., Ltd.",
+      "plaintiff": "Estech Systems IP, LLC",
+      "event_date": "2026-06-09",
+      "court_id": "txed",
+      "court": "E.D. Tex.",
+      "judge": "James Rodney Gilstrap",
+      "cause": "35:271 Patent Infringement",
+      "case_name": "Estech Systems IP, LLC v. Samsung Electronics Co., Ltd.",
+      "docket_url": "https://www.courtlistener.com/docket/73460553/estech-systems-ip-llc-v-samsung-electronics-co-ltd/",
+      "signals": {
+        "defendant_tier": "large",
+        "defendant_tier_reason": "known large/established company (samsung)",
+        "npe_plaintiff": true,
+        "npe_reasons": [
+          "NPE-style name (IP/Licensing/Patents/Holdings/Ventures)",
+          "shell-style multi-word LLC plaintiff"
+        ],
+        "priority_venue": true,
+        "venue_label": "E.D. Tex.",
+        "repeat_filer_count": 1,
+        "judge_signal": true,
+        "priority_score": 35
+      },
+      "grounding": {
+        "patents": [],
+        "complaint_snippet": "Case: Estech Systems IP, LLC v. Samsung Electronics Co., Ltd. et al was filed on 06/09/2026 and assigned to Judge Gilstrap and referred to Judge Payne. The Notice Regarding Consent to Proceed Before Magistrate Judge form is provided via hyperlink. (mdj)"
+      }
+    },
+    {
+      "docket_id": 73456943,
+      "docket_number": "2:26-cv-00455",
+      "company": "Dormakaba Holding AG",
+      "plaintiff": "Liberty Access Technologies Licensing LLC",
+      "event_date": "2026-06-08",
+      "court_id": "txed",
+      "court": "E.D. Tex.",
+      "judge": "",
+      "cause": "35:271 Patent Infringement",
+      "case_name": "Liberty Access Technologies Licensing LLC v. Dormakaba Holding AG",
+      "docket_url": "https://www.courtlistener.com/docket/73456943/liberty-access-technologies-licensing-llc-v-dormakaba-holding-ag/",
+      "signals": {
+        "defendant_tier": "large",
+        "defendant_tier_reason": "known large/established company (dormakaba)",
+        "npe_plaintiff": true,
+        "npe_reasons": [
+          "NPE-style name (IP/Licensing/Patents/Holdings/Ventures)",
+          "shell-style multi-word LLC plaintiff"
+        ],
+        "priority_venue": true,
+        "venue_label": "E.D. Tex.",
+        "repeat_filer_count": 2,
+        "judge_signal": false,
+        "priority_score": 35
+      },
+      "grounding": {
+        "patents": [],
+        "complaint_snippet": ""
+      }
+    },
+    {
+      "docket_id": 73469844,
+      "docket_number": "4:26-cv-00626",
+      "company": "CIGNA Healtcare",
+      "plaintiff": "Factor2 Multimedia Systems, LLC",
+      "event_date": "2026-06-10",
+      "court_id": "txed",
+      "court": "E.D. Tex.",
+      "judge": "Jeremy Daniel Kernodle",
+      "cause": "35:271 Patent Infringement",
+      "case_name": "Factor2 Multimedia Systems, LLC v. CIGNA Healtcare",
+      "docket_url": "https://www.courtlistener.com/docket/73469844/factor2-multimedia-systems-llc-v-cigna-healtcare/",
+      "signals": {
+        "defendant_tier": "large",
+        "defendant_tier_reason": "known large/established company (cigna)",
+        "npe_plaintiff": true,
+        "npe_reasons": [
+          "shell-style multi-word LLC plaintiff"
+        ],
+        "priority_venue": true,
+        "venue_label": "E.D. Tex.",
+        "repeat_filer_count": 1,
+        "judge_signal": false,
+        "priority_score": 34
+      },
+      "grounding": {
+        "patents": [],
+        "complaint_snippet": "COMPLAINT for Patent Infringement against CIGNA Healtcare ( Filing fee $ 405 receipt number ATXEDC-11596469.), filed by Factor2 Multimedia Systems, LLC. (Attachments: # 1 Exhibit Patent-in-Suit, # 2 Exhibit Patent-in-Suit, # 3 Exhibit Patent-in-suit, # 4 Exhibit Patent-in-Suit, # 5 Exhibit Patent-in-Suit, # 6 Exhibit Patent-in-Suit, # 7 Exhibit Chart, # 8 Civil Cover Sheet, # 9 Exhibit Summons) (C"
+      }
+    },
+    {
+      "docket_id": 73455720,
+      "docket_number": "2:26-cv-00452",
+      "company": "Teltonika IoT Group",
+      "plaintiff": "Integral Wireless Technologies LLC",
+      "event_date": "2026-06-08",
+      "court_id": "txed",
+      "court": "E.D. Tex.",
+      "judge": "",
+      "cause": "35:271 Patent Infringement",
+      "case_name": "Integral Wireless Technologies LLC v. Teltonika IoT Group",
+      "docket_url": "https://www.courtlistener.com/docket/73455720/integral-wireless-technologies-llc-v-teltonika-iot-group/",
+      "signals": {
+        "defendant_tier": "large",
+        "defendant_tier_reason": "known large/established company (teltonika)",
+        "npe_plaintiff": true,
+        "npe_reasons": [
+          "shell-style multi-word LLC plaintiff"
+        ],
+        "priority_venue": true,
+        "venue_label": "E.D. Tex.",
+        "repeat_filer_count": 1,
+        "judge_signal": false,
+        "priority_score": 34
+      },
+      "grounding": {
+        "patents": [
+          "7,953,411",
+          "7,822,141",
+          "8,031,654",
+          "7,310,537",
+          "7,627,805",
+          "7,548,592",
+          "7,738,595"
+        ],
+        "complaint_snippet": "COMPLAINT For Patent Infringement against All Defendants ( Filing fee $ 405 receipt number ATXEDC-11590195.), filed by Integral Wireless Technologies LLC. (Attachments: # 1 Exhibit A. Evidence of Use Regarding Infringement of U.S. Patent No. 7,953,411, # 2 Exhibit B. Evidence of Use Regarding Infringement of U.S. Patent No. 7,822,141, # 3 Exhibit C. Evidence of Use Regarding Infringement of U.S. P"
+      }
+    },
+    {
+      "docket_id": 73476204,
+      "docket_number": "2:26-cv-00467",
+      "company": "SZ DJI Technology CO., LTD.",
+      "plaintiff": "Arashi Vision Inc. (d/b/a Insta360)",
+      "event_date": "2026-06-11",
+      "court_id": "txed",
+      "court": "E.D. Tex.",
+      "judge": "James Rodney Gilstrap",
+      "cause": "35:271 Patent Infringement",
+      "case_name": "Arashi Vision Inc. (d/b/a Insta360) v. SZ DJI TECHNOLOGY CO., LTD.",
+      "docket_url": "https://www.courtlistener.com/docket/73476204/arashi-vision-inc-dba-insta360-v-sz-dji-technology-co-ltd/",
+      "signals": {
+        "defendant_tier": "large",
+        "defendant_tier_reason": "known large/established company (dji)",
+        "npe_plaintiff": false,
+        "npe_reasons": [],
+        "priority_venue": true,
+        "venue_label": "E.D. Tex.",
+        "repeat_filer_count": 1,
+        "judge_signal": true,
+        "priority_score": 33
+      },
+      "grounding": {
+        "patents": [
+          "US8938161",
+          "US8908090",
+          "US9154910"
+        ],
+        "complaint_snippet": "COMPLAINT for Patent Infringement against All Defendants ( Filing fee $ 405 receipt number ATXEDC-11599285.), filed by Arashi Vision Inc. (d/b/a Insta360), YILU GAOFEI (SHENZHEN) TECHNOLOGY CO., LTD.. (Attachments: # 1 Exhibit 1 - US8938161, # 2 Exhibit 2 - US8908090, # 3 Exhibit 3 - US9154910, # 4 Exhibit 4 - '161 Claim Chart, # 5 Exhibit 5 - '090 Claim Chart, # 6 Exhibit 6 - '910 Claim Chart, # "
+      }
+    },
+    {
+      "docket_id": 73471225,
+      "docket_number": "9:26-cv-80697",
+      "company": "Johnson Controls International PLC",
+      "plaintiff": "Innovation Sciences, LLC",
+      "event_date": "2026-06-11",
+      "court_id": "flsd",
+      "court": "S.D. Fla.",
+      "judge": "Ed Artau",
+      "cause": "35:0271 Patent Infringement",
+      "case_name": "Innovation Sciences, LLC v. Johnson Controls International PLC",
+      "docket_url": "https://www.courtlistener.com/docket/73471225/innovation-sciences-llc-v-johnson-controls-international-plc/",
+      "signals": {
+        "defendant_tier": "large",
+        "defendant_tier_reason": "known large/established company (johnson controls)",
+        "npe_plaintiff": true,
+        "npe_reasons": [
+          "NPE-style name (IP/Licensing/Patents/Holdings/Ventures)"
+        ],
+        "priority_venue": false,
+        "venue_label": null,
+        "repeat_filer_count": 2,
+        "judge_signal": false,
+        "priority_score": 33
+      },
+      "grounding": {
+        "patents": [],
+        "complaint_snippet": ""
+      }
+    },
+    {
+      "docket_id": 73461768,
+      "docket_number": "2:26-cv-00459",
+      "company": "BOE Technology Group Co., Ltd.",
+      "plaintiff": "NeoLayer LLC",
+      "event_date": "2026-06-09",
+      "court_id": "txed",
+      "court": "E.D. Tex.",
+      "judge": "James Rodney Gilstrap",
+      "cause": "35:271 Patent Infringement",
+      "case_name": "NeoLayer LLC v. BOE Technology Group Co., Ltd.",
+      "docket_url": "https://www.courtlistener.com/docket/73461768/neolayer-llc-v-boe-technology-group-co-ltd/",
+      "signals": {
+        "defendant_tier": "large",
+        "defendant_tier_reason": "known large/established company (boe technology)",
+        "npe_plaintiff": false,
+        "npe_reasons": [],
+        "priority_venue": true,
+        "venue_label": "E.D. Tex.",
+        "repeat_filer_count": 1,
+        "judge_signal": true,
+        "priority_score": 33
+      },
+      "grounding": {
+        "patents": [],
+        "complaint_snippet": "DEMAND for Trial by Jury by NeoLayer LLC. (McCarty, Warren) (Entered: 06/09/2026)"
+      }
+    },
+    {
+      "docket_id": 73457187,
+      "docket_number": "3:26-cv-00123",
+      "company": "Janus International Group, Inc.",
+      "plaintiff": "Liberty Access Technologies Licensing LLC",
+      "event_date": "2026-06-08",
+      "court_id": "gand",
+      "court": "N.D. Ga.",
+      "judge": "Leigh Martin May",
+      "cause": "35:271 Patent Infringement",
+      "case_name": "Liberty Access Technologies Licensing LLC v. Janus International Group, Inc.",
+      "docket_url": "https://www.courtlistener.com/docket/73457187/liberty-access-technologies-licensing-llc-v-janus-international-group/",
+      "signals": {
+        "defendant_tier": "large",
+        "defendant_tier_reason": "known large/established company (janus international)",
+        "npe_plaintiff": true,
+        "npe_reasons": [
+          "NPE-style name (IP/Licensing/Patents/Holdings/Ventures)",
+          "shell-style multi-word LLC plaintiff"
+        ],
+        "priority_venue": false,
+        "venue_label": null,
+        "repeat_filer_count": 2,
+        "judge_signal": false,
+        "priority_score": 33
+      },
+      "grounding": {
+        "patents": [
+          "9,373,205"
+        ],
+        "complaint_snippet": "COMPLAINT for Patent Infringement with Jury Demand filed by Liberty Access Technologies Licensing LLC. (Filing fee $405, receipt number AGANDC-15298759) (Attachments: # 1 Exhibit A, # 2 Exhibit B, # 3 Exhibit C, # 4 Exhibit D, # 5 Exhibit E, # 6 Civil Cover Sheet)(jkb) Please visit our website at http://www.gand.uscourts.gov/commonly-used-forms to obtain Pretrial Instructions and Pretrial Associat"
+      }
+    },
+    {
+      "docket_id": 73457022,
+      "docket_number": "2:26-cv-00456",
+      "company": "Samsung Electronics Co., Ltd.",
+      "plaintiff": "Netlist, Inc.",
+      "event_date": "2026-06-08",
+      "court_id": "txed",
+      "court": "E.D. Tex.",
+      "judge": "James Rodney Gilstrap",
+      "cause": "28:1338 Patent Infringement",
+      "case_name": "Netlist, Inc. v. Samsung Electronics Co., Ltd.",
+      "docket_url": "https://www.courtlistener.com/docket/73457022/netlist-inc-v-samsung-electronics-co-ltd/",
+      "signals": {
+        "defendant_tier": "large",
+        "defendant_tier_reason": "known large/established company (samsung)",
+        "npe_plaintiff": false,
+        "npe_reasons": [],
+        "priority_venue": true,
+        "venue_label": "E.D. Tex.",
+        "repeat_filer_count": 1,
+        "judge_signal": true,
+        "priority_score": 33
+      },
+      "grounding": {
+        "patents": [],
+        "complaint_snippet": "COMPLAINT against Avnet, Inc., Samsung Electronics America, Inc., Samsung Electronics Co., Ltd., Samsung Semiconductor, Inc. ( Filing fee $ 405 receipt number ATXEDC-11590816.), filed by Netlist, Inc.. (Attachments: # 1 Civil Cover Sheet) (Counsel is reminded to file form required by LR CV-4(a).)(Truelove, Jennifer) (Entered: 06/08/2026)"
+      }
+    },
+    {
+      "docket_id": 73456319,
+      "docket_number": "2:26-cv-00453",
+      "company": "MEG Energy Corp.",
+      "plaintiff": "Crude Solutions Ltd.",
+      "event_date": "2026-06-08",
+      "court_id": "txed",
+      "court": "E.D. Tex.",
+      "judge": "James Rodney Gilstrap",
+      "cause": "35:271 Patent Infringement",
+      "case_name": "Crude Solutions Ltd. v. MEG Energy Corp.",
+      "docket_url": "https://www.courtlistener.com/docket/73456319/crude-solutions-ltd-v-meg-energy-corp/",
+      "signals": {
+        "defendant_tier": "large",
+        "defendant_tier_reason": "known large/established company (meg energy)",
+        "npe_plaintiff": false,
+        "npe_reasons": [],
+        "priority_venue": true,
+        "venue_label": "E.D. Tex.",
+        "repeat_filer_count": 1,
+        "judge_signal": true,
+        "priority_score": 33
+      },
+      "grounding": {
+        "patents": [],
+        "complaint_snippet": ""
+      }
+    },
+    {
+      "docket_id": 73454547,
+      "docket_number": "2:26-cv-00450",
+      "company": "Avis Budget Group, Inc.",
+      "plaintiff": "S3G Technology LLC",
+      "event_date": "2026-06-08",
+      "court_id": "txed",
+      "court": "E.D. Tex.",
+      "judge": "James Rodney Gilstrap",
+      "cause": "35:271 Patent Infringement",
+      "case_name": "S3G Technology LLC v. Avis Budget Group, Inc.",
+      "docket_url": "https://www.courtlistener.com/docket/73454547/s3g-technology-llc-v-avis-budget-group-inc/",
+      "signals": {
+        "defendant_tier": "large",
+        "defendant_tier_reason": "known large/established company (avis budget)",
+        "npe_plaintiff": false,
+        "npe_reasons": [],
+        "priority_venue": true,
+        "venue_label": "E.D. Tex.",
+        "repeat_filer_count": 1,
+        "judge_signal": true,
+        "priority_score": 33
+      },
+      "grounding": {
+        "patents": [],
+        "complaint_snippet": "Case: S3G Technology LLC v. Avis Budget Group, Inc. et al was filed on 6/8/2026 and assigned to Judge Gilstrap and referred to Judge Payne. The Notice Regarding Consent to Proceed Before Magistrate Judge form is provided via hyperlink. (NKL)"
+      }
+    },
+    {
+      "docket_id": 73471496,
+      "docket_number": "2:26-cv-00464",
+      "company": "Duluth Holdings INC. (d/b/a Duluth Trading Company)",
+      "plaintiff": "DISINTERMEDIATION SERVICES, INC.",
+      "event_date": "2026-06-11",
+      "court_id": "txed",
+      "court": "E.D. Tex.",
+      "judge": "",
+      "cause": "35:271 Patent Infringement",
+      "case_name": "DISINTERMEDIATION SERVICES, INC. v. DULUTH HOLDINGS INC. (d/b/a DULUTH TRADING COMPANY)",
+      "docket_url": "https://www.courtlistener.com/docket/73471496/disintermediation-services-inc-v-duluth-holdings-inc-dba-duluth/",
+      "signals": {
+        "defendant_tier": "large",
+        "defendant_tier_reason": "known large/established company (duluth)",
+        "npe_plaintiff": false,
+        "npe_reasons": [],
+        "priority_venue": true,
+        "venue_label": "E.D. Tex.",
+        "repeat_filer_count": 1,
+        "judge_signal": false,
+        "priority_score": 32
+      },
+      "grounding": {
+        "patents": [],
+        "complaint_snippet": ""
+      }
+    },
+    {
+      "docket_id": 73462669,
+      "docket_number": "2:26-cv-00460",
+      "company": "Murphy USA Inc.",
+      "plaintiff": "Nearby Systems LLC",
+      "event_date": "2026-06-09",
+      "court_id": "txed",
+      "court": "E.D. Tex.",
+      "judge": "",
+      "cause": "35:271 Patent Infringement",
+      "case_name": "Nearby Systems LLC v. Murphy USA Inc.",
+      "docket_url": "https://www.courtlistener.com/docket/73462669/nearby-systems-llc-v-murphy-usa-inc/",
+      "signals": {
+        "defendant_tier": "large",
+        "defendant_tier_reason": "known large/established company (murphy usa)",
+        "npe_plaintiff": false,
+        "npe_reasons": [],
+        "priority_venue": true,
+        "venue_label": "E.D. Tex.",
+        "repeat_filer_count": 1,
+        "judge_signal": false,
+        "priority_score": 32
+      },
+      "grounding": {
+        "patents": [
+          "9,532,164",
+          "10,469,980",
+          "11,937,145",
+          "12,185,177"
+        ],
+        "complaint_snippet": "COMPLAINT For Patent Infringement against Murphy USA Inc. ( Filing fee $ 405 receipt number ATXEDC-11593670.), filed by Nearby Systems LLC. (Attachments: # 1 Exhibit A. U.S. Patent No. 9,532,164, # 2 Exhibit B. U.S. Patent No. 10,469,980, # 3 Exhibit C. U.S. Patent No. 11,937,145, # 4 Exhibit D. U.S. Patent No. 12,185,177, # 5 Exhibit E. Webpage: Murphy Drive Rewards App Available at the App Store"
+      }
+    },
+    {
+      "docket_id": 73454947,
+      "docket_number": "2:26-cv-00451",
+      "company": "Fortinet Inc.",
+      "plaintiff": "Arc Link LLC",
+      "event_date": "2026-06-08",
+      "court_id": "txed",
+      "court": "E.D. Tex.",
+      "judge": "Robert William Schroeder III",
+      "cause": "28:1338 Patent Infringement",
+      "case_name": "Arc Link LLC v. Fortinet Inc.",
+      "docket_url": "https://www.courtlistener.com/docket/73454947/arc-link-llc-v-fortinet-inc/",
+      "signals": {
+        "defendant_tier": "large",
+        "defendant_tier_reason": "known large/established company (fortinet)",
+        "npe_plaintiff": false,
+        "npe_reasons": [],
+        "priority_venue": true,
+        "venue_label": "E.D. Tex.",
+        "repeat_filer_count": 1,
+        "judge_signal": false,
+        "priority_score": 32
+      },
+      "grounding": {
+        "patents": [],
+        "complaint_snippet": "Case: Arc Link LLC v. Fortinet Inc. was filed on 06/08/2026 and assigned to Judge Schroeder. The Notice Regarding Consent to Proceed Before Magistrate Judge form is provided via hyperlink. (mdj)"
+      }
+    },
+    {
+      "docket_id": 73461601,
+      "docket_number": "1:26-cv-01553",
+      "company": "NSPEC Innovations, LLC",
+      "plaintiff": "ABC IP, LLC",
+      "event_date": "2026-06-09",
+      "court_id": "txwd",
+      "court": "W.D. Tex.",
+      "judge": "",
+      "cause": "15:1126 Patent Infringement",
+      "case_name": "ABC IP, LLC v. NSPEC Innovations, LLC",
+      "docket_url": "https://www.courtlistener.com/docket/73461601/abc-ip-llc-v-nspec-innovations-llc/",
+      "signals": {
+        "defendant_tier": "mid",
+        "defendant_tier_reason": "no strong size signal (defaulted to mid)",
+        "npe_plaintiff": true,
+        "npe_reasons": [
+          "campaign filer: 10 patent suits in this run",
+          "NPE-style name (IP/Licensing/Patents/Holdings/Ventures)"
+        ],
+        "priority_venue": false,
+        "venue_label": "W.D. Tex. (Waco)",
+        "repeat_filer_count": 10,
+        "judge_signal": false,
+        "priority_score": 21
+      },
+      "grounding": {
+        "patents": [
+          "12,038,247",
+          "12,031,784",
+          "12,529,538",
+          "12,578,159",
+          "12,636,403"
+        ],
+        "complaint_snippet": "COMPLAINT for Patent Infringement ( Filing fee $ 405 receipt number ATXWDC-22101704), filed by ABC IP, LLC, RBTM LLC, Rare Breed Triggers, Inc.. (Attachments: # 1 Exhibit A - 12,038,247, # 2 Exhibit B - 12,031,784, # 3 Exhibit C - 12,529,538, # 4 Exhibit D - 12,578,159, # 5 Exhibit E - 12,636,403, # 6 Exhibit F - Super Safety Guide, # 7 Civil Cover Sheet)(Colvin, Matthew) (Entered: 06/09/2026)"
+      },
+      "campaign": {
+        "plaintiff": "ABC IP, LLC",
+        "campaign_size": 10,
+        "collapsed_cases": 10,
+        "other_defendants": [
+          {
+            "docket_id": 73462461,
+            "company": "GrabAGun LLC",
+            "court_id": "txnd"
+          },
+          {
+            "docket_id": 73461441,
+            "company": "Dirty Bird Industries, LLC",
+            "court_id": "caed"
+          },
+          {
+            "docket_id": 73471685,
+            "company": "HD Arms, LLC",
+            "court_id": "ned"
+          },
+          {
+            "docket_id": 73462592,
+            "company": "AR-15 GUN Owners OF America, INC.",
+            "court_id": "gamd"
+          },
+          {
+            "docket_id": 73462554,
+            "company": "Atlantic Firearms LLC",
+            "court_id": "mdd"
+          },
+          {
+            "docket_id": 73462431,
+            "company": "Mercier & Sons LLC",
+            "court_id": "flnd"
+          },
+          {
+            "docket_id": 73462323,
+            "company": "CF Tactical, Inc.",
+            "court_id": "txsd"
+          },
+          {
+            "docket_id": 73462258,
+            "company": "Velocity Ammunition Sales, LLC",
+            "court_id": "vaed"
+          },
+          {
+            "docket_id": 73459541,
+            "company": "GUN Builders Depot LLC",
+            "court_id": "insd"
+          }
+        ]
+      }
+    },
+    {
+      "docket_id": 73470234,
+      "docket_number": "2:26-cv-00463",
+      "company": "Arashi Vision Inc. d/b/a Insta360",
+      "plaintiff": "SZ DJI TECHNOLOGY CO., LTD.",
+      "event_date": "2026-06-11",
+      "court_id": "txed",
+      "court": "E.D. Tex.",
+      "judge": "James Rodney Gilstrap",
+      "cause": "35:145 Patent Infringement",
+      "case_name": "SZ DJI TECHNOLOGY CO., LTD. v. Arashi Vision Inc. d/b/a Insta360",
+      "docket_url": "https://www.courtlistener.com/docket/73470234/sz-dji-technology-co-ltd-v-arashi-vision-inc-dba-insta360/",
+      "signals": {
+        "defendant_tier": "mid",
+        "defendant_tier_reason": "no strong size signal (defaulted to mid)",
+        "npe_plaintiff": false,
+        "npe_reasons": [],
+        "priority_venue": true,
+        "venue_label": "E.D. Tex.",
+        "repeat_filer_count": 2,
+        "judge_signal": true,
+        "priority_score": 19
+      },
+      "grounding": {
+        "patents": [],
+        "complaint_snippet": ""
+      },
+      "campaign": {
+        "plaintiff": "SZ DJI TECHNOLOGY CO., LTD.",
+        "campaign_size": 2,
+        "collapsed_cases": 2,
+        "other_defendants": [
+          {
+            "docket_id": 73470212,
+            "company": "Arashi Vision Inc. d/b/a Insta360",
+            "court_id": "txed"
+          }
+        ]
+      }
+    },
+    {
+      "docket_id": 73469984,
+      "docket_number": "7:26-cv-00229",
+      "company": "HiddenLayer, Inc.",
+      "plaintiff": "Congruent Media Resourcing LLC",
+      "event_date": "2026-06-10",
+      "court_id": "txwd",
+      "court": "W.D. Tex.",
+      "judge": "Walter David Counts III",
+      "cause": "35:271 Patent Infringement",
+      "case_name": "Congruent Media Resourcing LLC v. HiddenLayer, Inc.",
+      "docket_url": "https://www.courtlistener.com/docket/73469984/congruent-media-resourcing-llc-v-hiddenlayer-inc/",
+      "signals": {
+        "defendant_tier": "mid",
+        "defendant_tier_reason": "no strong size signal (defaulted to mid)",
+        "npe_plaintiff": true,
+        "npe_reasons": [
+          "shell-style multi-word LLC plaintiff"
+        ],
+        "priority_venue": false,
+        "venue_label": "W.D. Tex. (Waco)",
+        "repeat_filer_count": 2,
+        "judge_signal": false,
+        "priority_score": 19
+      },
+      "grounding": {
+        "patents": [
+          "9,135,418"
+        ],
+        "complaint_snippet": "COMPLAINT for Patent Infringement ( Filing fee $ 405 receipt number ATXWDC-22112171), filed by Congruent Media Resourcing LLC. (Attachments: # 1 Exhibit A United States Patent No. 9,135,418, # 2 Civil Cover Sheet)(Kalberg, Steven) (Entered: 06/10/2026)"
+      }
+    },
+    {
+      "docket_id": 73456752,
+      "docket_number": "2:26-cv-00454",
+      "company": "Vitrium Systems, Inc.",
+      "plaintiff": "Lone Star Document Management, LLC",
+      "event_date": "2026-06-08",
+      "court_id": "txed",
+      "court": "E.D. Tex.",
+      "judge": "Robert William Schroeder III",
+      "cause": "35:271 Patent Infringement",
+      "case_name": "Lone Star Document Management, LLC v. Vitrium Systems, Inc.",
+      "docket_url": "https://www.courtlistener.com/docket/73456752/lone-star-document-management-llc-v-vitrium-systems-inc/",
+      "signals": {
+        "defendant_tier": "mid",
+        "defendant_tier_reason": "no strong size signal (defaulted to mid)",
+        "npe_plaintiff": true,
+        "npe_reasons": [
+          "shell-style multi-word LLC plaintiff"
+        ],
+        "priority_venue": true,
+        "venue_label": "E.D. Tex.",
+        "repeat_filer_count": 1,
+        "judge_signal": false,
+        "priority_score": 19
+      },
+      "grounding": {
+        "patents": [
+          "6,918,082"
+        ],
+        "complaint_snippet": "COMPLAINT for Patent Infringement against Vitrium Systems, Inc. ( Filing fee $ 405 receipt number ATXEDC-11590717.), filed by Lone Star Document Management, LLC. (Attachments: # 1 Exhibit 1, # 2 Exhibit 2, # 3 Exhibit 3, # 4 Exhibit 4, # 5 Civil Cover Sheet) (Counsel is reminded to file form required by LR CV-4(a).)(Devlin, Timothy) (Entered: 06/08/2026)"
+      }
+    },
+    {
+      "docket_id": 73452480,
+      "docket_number": "9:26-cv-80678",
+      "company": "M2M Services, LTD",
+      "plaintiff": "Innovation Sciences, LLC",
+      "event_date": "2026-06-08",
+      "court_id": "flsd",
+      "court": "S.D. Fla.",
+      "judge": "Ed Artau",
+      "cause": "35:0271 Patent Infringement",
+      "case_name": "Innovation Sciences, LLC v. M2M Services, LTD",
+      "docket_url": "https://www.courtlistener.com/docket/73452480/innovation-sciences-llc-v-m2m-services-ltd/",
+      "signals": {
+        "defendant_tier": "mid",
+        "defendant_tier_reason": "no strong size signal (defaulted to mid)",
+        "npe_plaintiff": true,
+        "npe_reasons": [
+          "NPE-style name (IP/Licensing/Patents/Holdings/Ventures)"
+        ],
+        "priority_venue": false,
+        "venue_label": null,
+        "repeat_filer_count": 2,
+        "judge_signal": false,
+        "priority_score": 18
+      },
+      "grounding": {
+        "patents": [],
+        "complaint_snippet": "COMPLAINT for Patent Infringement against M2M Services, LTD. Filing fees $ 405.00 receipt number AFLSDC-19628096, filed by Innovation Sciences, LLC. (Attachments: # 1 Civil Cover Sheet, # 2 Exhibit Patent-in-Suit, # 3 Exhibit Patent-in-Suit, # 4 Exhibit Patent-in-Suit, # 5 Exhibit Catalog, # 6 Exhibit Chart, # 7 Exhibit Chart, # 8 Exhibit Chart, # 9 Summon(s) Summons M2M Alula, # 10 Summon(s) Summ"
+      }
+    }
+  ],
+  "collapsed": [
+    {
+      "docket_id": 73462461,
+      "company": "GrabAGun LLC",
+      "plaintiff": "ABC IP LLC",
+      "represented_by": 73461601
+    },
+    {
+      "docket_id": 73461441,
+      "company": "Dirty Bird Industries, LLC",
+      "plaintiff": "ABC IP, LLC",
+      "represented_by": 73461601
+    },
+    {
+      "docket_id": 73471685,
+      "company": "HD Arms, LLC",
+      "plaintiff": "ABC IP, LLC",
+      "represented_by": 73461601
+    },
+    {
+      "docket_id": 73462592,
+      "company": "AR-15 GUN Owners OF America, INC.",
+      "plaintiff": "ABC IP, LLC",
+      "represented_by": 73461601
+    },
+    {
+      "docket_id": 73462554,
+      "company": "Atlantic Firearms LLC",
+      "plaintiff": "ABC IP, LLC",
+      "represented_by": 73461601
+    },
+    {
+      "docket_id": 73462431,
+      "company": "Mercier & Sons LLC",
+      "plaintiff": "ABC IP LLC",
+      "represented_by": 73461601
+    },
+    {
+      "docket_id": 73462323,
+      "company": "CF Tactical, Inc.",
+      "plaintiff": "ABC IP, LLC",
+      "represented_by": 73461601
+    },
+    {
+      "docket_id": 73462258,
+      "company": "Velocity Ammunition Sales, LLC",
+      "plaintiff": "ABC IP, LLC",
+      "represented_by": 73461601
+    },
+    {
+      "docket_id": 73459541,
+      "company": "GUN Builders Depot LLC",
+      "plaintiff": "ABC IP LLC",
+      "represented_by": 73461601
+    },
+    {
+      "docket_id": 73470212,
+      "company": "Arashi Vision Inc. d/b/a Insta360",
+      "plaintiff": "SZ DJI TECHNOLOGY CO., LTD.",
+      "represented_by": 73470234
+    }
+  ],
+  "dropped": [
+    {
+      "docket_id": 73476123,
+      "case_name": "Iowa Rotocast Plastics, Inc. d/b/a Grizzly Coolers v. Fuse, LLC",
+      "defendant": "Fuse, LLC",
+      "drop_reason": "operating-company defendant but no NPE / priority-venue / campaign signal"
+    },
+    {
+      "docket_id": 73475188,
+      "case_name": "Hangzhou Yingsen Technology CO., Ltd v. Shi",
+      "defendant": "Shi",
+      "drop_reason": "individual or unverifiable defendant (no corporate indicator)"
+    },
+    {
+      "docket_id": 73473829,
+      "case_name": "Kids2, LLC v. Graco Childrens Products Inc.",
+      "defendant": "Graco Childrens Products Inc.",
+      "drop_reason": "operating-company defendant but no NPE / priority-venue / campaign signal"
+    },
+    {
+      "docket_id": 73472222,
+      "case_name": "Sandisk Corporation v. MonolithIC 3D Inc.",
+      "defendant": "MonolithIC 3D Inc.",
+      "drop_reason": "operating-company defendant but no NPE / priority-venue / campaign signal"
+    },
+    {
+      "docket_id": 73466811,
+      "case_name": "Tee Claw Sports, Inc. v. Ice Tees LLC",
+      "defendant": "Ice Tees LLC",
+      "drop_reason": "operating-company defendant but no NPE / priority-venue / campaign signal"
+    },
+    {
+      "docket_id": 73459267,
+      "case_name": "ENCRYPTPAT, LLC v. Google LLC",
+      "defendant": "Google LLC",
+      "drop_reason": "operating-company defendant but no NPE / priority-venue / campaign signal"
+    },
+    {
+      "docket_id": 73457799,
+      "case_name": "Nutramax Laboratories, Inc. v. Rowlo, LLC",
+      "defendant": "Rowlo, LLC",
+      "drop_reason": "operating-company defendant but no NPE / priority-venue / campaign signal"
+    },
+    {
+      "docket_id": 73456916,
+      "case_name": "OMNI MEDSCI, INC. v. APPLE INC.",
+      "defendant": "APPLE INC.",
+      "drop_reason": "operating-company defendant but no NPE / priority-venue / campaign signal"
+    },
+    {
+      "docket_id": 73456885,
+      "case_name": "Lan",
+      "defendant": "",
+      "drop_reason": "no defendant parsed from caseName"
+    },
+    {
+      "docket_id": 73456753,
+      "case_name": "Samsara Inc. v. Motive Technologies, Inc.",
+      "defendant": "Motive Technologies, Inc.",
+      "drop_reason": "operating-company defendant but no NPE / priority-venue / campaign signal"
+    },
+    {
+      "docket_id": 73455860,
+      "case_name": "Conair LLC v. Farouk Systems, Inc.",
+      "defendant": "Farouk Systems, Inc.",
+      "drop_reason": "operating-company defendant but no NPE / priority-venue / campaign signal"
+    },
+    {
+      "docket_id": 73451980,
+      "case_name": "Chengdu Huiyuzhongtai Technology Co., Ltd. v. Changshawanfengyingmaoyiyouxiangongsi",
+      "defendant": "Changshawanfengyingmaoyiyouxiangongsi",
+      "drop_reason": "individual or unverifiable defendant (no corporate indicator)"
+    },
+    {
+      "docket_id": 73451384,
+      "case_name": "Zhang v. The Identified on Schedule A",
+      "defendant": "The Identified on Schedule A",
+      "drop_reason": "Schedule A / Doe mass-defendant case"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+# No third-party dependencies.
+# The fetch step uses only the Python standard library (urllib, json),
+# so it runs on any python3 (3.8+) with no `pip install` required.
