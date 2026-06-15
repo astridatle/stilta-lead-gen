@@ -58,7 +58,8 @@ Hard rules:
   reverse this.
 - Address the defendant's in-house IP/legal TEAM as a role, not a person. Open
   with exactly "Hi," on its own line. No names, no bracketed placeholders.
-- Company name: our company is spelled EXACTLY "Stilta" -- one i, one l.
+- Company name: our company is spelled EXACTLY "Stilta": S-T-I-L-T-A. One i, one l,
+  one t. Never "Stiita" (double i), "Stitta" (double t), or any other variant.
 - Punctuation: no em-dashes, en-dashes, or double hyphens (--). Periods, colons,
   or commas only. Plain ASCII: straight quotes, no fancy typography.
 - Three short paragraphs, ~110-160 words total. No "I hope this finds you well",
@@ -151,7 +152,7 @@ def _extract_json(text: str) -> dict:
 
 EM_EN_DASH_RE = re.compile(r"[ \t]*[—–―‒][ \t]*")  # em/en/bar/figure dash
 RECIPIENT_NAME_RE = re.compile(r"\[[^\]]*\bname\b[^\]]*\]", re.IGNORECASE)
-STILTA_TYPO_RE = re.compile(r"\bStii+ta\b|\bSti[il]{2,}ta\b", re.IGNORECASE)
+STILTA_TYPO_RE = re.compile(r"\bSti(?:i+ta|[il]{2,}ta|t+a)\b", re.IGNORECASE)
 SMART_TYPOGRAPHY = {
     "“": '"', "”": '"', "‘": "'", "’": "'", "…": "...",
 }

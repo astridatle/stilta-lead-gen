@@ -6,14 +6,26 @@ unique email per lead to the **defendant's in-house IP/legal decision-maker** �
 reviewed by a human, never sent. End-to-end and deterministic except one grounded
 LLM call.
 
-**The qualification line (where noise starts).** Hard gate: the **defendant must be a
-real operating company** — drop individuals (`Shi`), Schedule A / "Doe" storefront
-cases (the N.D. Ill. cluster), government, and unverifiable single-token names. Then a
-case only qualifies if it also shows a **troll/venue signal**: an NPE-style plaintiff
-(name heuristics or a ≥3-suit campaign in the same batch) **or** a patent-heavy venue
-(E.D. Tex., D. Del.). An operating-company defendant with neither signal is treated as
-noise. On the sample run this took **44 fetched → 31 qualified**, with the ABC IP
-10-suit firearms campaign and EDTX NPE filings rising to the top.
+**The qualification line (where noise starts).** Two filters, applied in order:
+
+1. **Hard gate — is the defendant worth contacting at all?** Keep only real operating
+   companies. Drop individuals (`Shi`), Schedule A / "Doe" storefront cases (the
+   N.D. Ill. cluster), government, and unverifiable single-token names.
+2. **Signal gate — is this the kind of suit Stilta can help with?** A surviving case
+   qualifies only if it also shows a troll or venue signal: an NPE-style plaintiff
+   (name heuristics, or a campaign of 3+ suits in the same batch) **or** a patent-heavy
+   venue (E.D. Tex., D. Del.). An operating-company defendant with neither signal is
+   treated as noise.
+
+After qualifying, a third step **de-floods campaigns**: when one NPE sues many small
+defendants, those collapse into a single representative lead (the others are recorded
+inside it) so one campaign does not flood the list. Large defendants always stay as
+their own lead.
+
+On the sample run the funnel was **44 fetched → 31 qualified → 21 final leads** (the
+ABC IP 10-suit firearms campaign collapsed from 10 suits to 1 representative, which is
+most of the 31→21 drop). NPE filings in E.D. Tex. (Imperva, Pepperl+Fuchs, Samsung)
+rose to the top.
 
 **What I chose against.** Paid sources (Lex Machina, Docket Navigator, Darts-IP) —
 better-structured but cost/integration overhead against an 80/20 goal; CourtListener
