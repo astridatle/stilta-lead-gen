@@ -83,7 +83,7 @@ Each stage is also runnable alone for inspection:
 | `drafts/<docket_id>-<company>.eml` | One unique draft per lead (RFC 5322). |
 | `seen_dockets.json` | Dedup state, keyed on `docket_id`. |
 | `logs/last_run.json` | Monitoring heartbeat (metrics of the most recent run). |
-| `data/*.json` | Intermediate fetch/qualify artifacts (debug; gitignored). |
+| `data/*.json` | Intermediate fetch/qualify artifacts (included for `--use-cache`). |
 
 **`leads.jsonl` record** — the four required fields come first, then enrichment for
 downstream agents (qualification, CRM sync, follow-ups):
@@ -95,6 +95,12 @@ downstream agents (qualification, CRM sync, follow-ups):
  "patents":["9,135,418"],"docket_url":"https://…","email_subject":"…",
  "draft_eml":"drafts/73468336-imperva-inc.eml","gmail_draft_id":"r-…","generated_at":"…"}
 ```
+
+**Why JSON Lines?** Chosen over CSV and Markdown: append-only (one line per weekly run,
+no file rewrites), each record is self-contained (nested fields like `patents` need no
+escaping), and any downstream agent consumes it with a single `json.loads` per line —
+no parsing acrobatics. The format is designed to feed directly into the next agent step
+(CRM sync, qualification re-scoring, follow-up drafting).
 
 ## Evaluating draft quality
 
@@ -226,5 +232,6 @@ Every run writes `logs/last_run.json` and prints the run metrics
 - `alert_zero_drafts == true`, or
 - `fetched` drops to an anomalous level (source/RECAP outage).
 
-See [PM.md](PM.md) for failure modes and the 2-week roadmap, and
-[DECISIONS.md](DECISIONS.md) for all design choices.
+See [PM.md](PM.md) for failure modes and the 2-week roadmap,
+[DECISIONS.md](DECISIONS.md) for all design choices, and
+[SOURCES.md](SOURCES.md) for the top-3 source selection and reasoning.
