@@ -14,6 +14,32 @@ prose fields + email. The model never touches fetching, filtering, dedup, or sta
 **No send function exists anywhere in the code** — the only outputs are `.eml` files
 and (optionally) Gmail `drafts.create`.
 
+## Reviewing this submission — start here
+
+**1. Look at the output that's already in the repo (no setup):**
+- [`leads.jsonl`](leads.jsonl) — the 21-lead sample list (4 required fields + enrichment)
+- [`drafts/`](drafts/) — the 21 unique email drafts (`.eml`)
+- [`eval_results.jsonl`](eval_results.jsonl) — quality scores from an independent LLM judge
+
+**2. Run the pipeline with zero credentials** (uses cached data + a stub instead of the LLM):
+```bash
+/usr/bin/python3 run.py --dry-run --use-cache --top-n 0   # full flow, no keys, no network
+/usr/bin/python3 test_behaviour.py                        # idempotency / no-send / empty-window
+```
+
+**3. See real LLM drafts** — add your own `ANTHROPIC_API_KEY` to `.env`, then:
+```bash
+/usr/bin/python3 run.py --reset --use-cache --top-n 0     # regenerate all 21 real drafts
+```
+
+**4. Push to Gmail** — easiest path, matches your MCP setup: open Claude Code with the
+Gmail MCP connected and say *"read leads.jsonl and create a Gmail draft for each lead."*
+(Or use the OAuth `--gmail` flag for unattended cron — see below.)
+
+> **Linux/non-Mac:** replace `/usr/bin/python3` with plain `python3`. The explicit
+> path is only needed on macOS, where the default Framework Python lacks a CA bundle
+> and fails HTTPS calls; system `/usr/bin/python3` has working certs.
+
 ## Requirements
 
 - **Python:** use `/usr/bin/python3` (macOS system Python, 3.9). The Framework
